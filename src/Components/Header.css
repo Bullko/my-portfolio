@@ -5,6 +5,15 @@
   padding: 2rem;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  height: 5rem;
+}
+
 ul {
   display: flex;
   flex-direction: row;

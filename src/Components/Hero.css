@@ -5,20 +5,23 @@
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  padding-top: 5rem;
 }
 
 .profile-info > h1 {
   font-size: 7rem;
+  margin: 2rem;
 }
 .profile-info > p {
   font-size: 2rem;
+  margin: 2rem;
 }
 .profile-pic {
   width: 30rem;
-  height: 35rem;
+  height: 34rem;
+  border-radius: 2rem;
   background-image: url(https://www.100percent.com/cdn/shop/t/300/assets/tech-aircraft2-section-05-visual-06.jpg?v=120709914432827875641688754410);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5rem;
 }

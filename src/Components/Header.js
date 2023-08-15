@@ -3,7 +3,10 @@ import HeaderStyles from "./Header.css";
 export default function Header() {
   return (
     <div className="header">
-      <h1>AntonK</h1>
+      <div className="logo">
+        <img src="./img/logo.svg" />
+        <h1>AntonK</h1>
+      </div>
       <nav>
         <ul>
           <li>

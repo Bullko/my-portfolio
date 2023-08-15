@@ -9,8 +9,8 @@ export default function Hero() {
       <div className="profile-info">
         <h1>Hello!</h1>
         <p>
-          Fuelled by a passion for designing products,<br></br> I have a deep
-          desire to MTB and FRONTEND<br></br>in my work. Learn more about my
+          Fuelled by a passion for designing things.<br></br> I have a deep
+          passion to MTB and FRONTEND<br></br>in my life. Learn more about my
           journey below.
         </p>
       </div>
