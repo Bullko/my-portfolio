@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  color: #1a1c20;
+  font-size: 3rem;
+}
+
+a {
+  font-size: 2rem;
+  padding: 2rem;
+}
