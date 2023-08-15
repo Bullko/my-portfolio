@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  width: 50rem;
+  height: 35rem;
+  background-image: url(https://www.100percent.com/cdn/shop/t/300/assets/tech-aircraft2-section-05-visual-06.jpg?v=120709914432827875641688754410);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
