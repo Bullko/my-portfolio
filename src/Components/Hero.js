@@ -6,9 +6,13 @@ export default function Hero() {
       <div className="profile-pic">
         <img />
       </div>
-      <div>
+      <div className="profile-info">
         <h1>Hello!</h1>
-        <h4>lorem 10</h4>
+        <p>
+          Fuelled by a passion for designing products,<br></br> I have a deep
+          desire to MTB and FRONTEND<br></br>in my work. Learn more about my
+          journey below.
+        </p>
       </div>
     </div>
   );
