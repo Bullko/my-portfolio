@@ -1,7 +1,7 @@
-# My first portfolip
+# My first portfolio
 
 Build in ReactJS
 
-##Contains
+## Contains
 
 Hero section, portfolio and contact form. Simple.
