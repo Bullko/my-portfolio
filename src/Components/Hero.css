@@ -1,20 +1,30 @@
 .hero {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   max-width: 100rem;
   margin: 0 auto;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 5rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 20rem;
+  text-align: left;
 }
 
 .profile-info > h1 {
   font-size: 7rem;
-  margin: 2rem;
+  margin: 1rem;
 }
-.profile-info > p {
+.profile-text {
+  max-width: 10rem;
   font-size: 2rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 .profile-pic {
   width: 30rem;

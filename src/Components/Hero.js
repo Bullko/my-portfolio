@@ -1,7 +1,16 @@
 import "./Hero.css";
 import { useState } from "react";
+import { useSpring, animated } from "@react-spring/web";
+import Fadetext from "./Fadetext";
 
 export default function Hero() {
+  const styles = useSpring({
+    loop: false,
+    from: { opacity: "0", transform: "perspective(800px) rotateX(100deg)" },
+    to: { opacity: "1", transform: "perspective(600px) rotateX(0deg)" },
+    config: { duration: "1000" },
+  });
+
   const [isHover, setIsHover] = useState(false);
 
   const handleMouseEnter = () => {
@@ -13,28 +22,30 @@ export default function Hero() {
 
   const color = {
     color: isHover ? "#374f80" : "#1a1c20",
-    fontWeight: isHover ? "700" : "",
+    fontWeight: isHover ? "400" : "",
+  };
+
+  const transition = {
+    transition: "0.5ms",
   };
 
   return (
     <div className="hero">
-      <div className="profile-pic">
+      <animated.div style={styles} className="profile-pic">
         <img />
-      </div>
-      <div className="profile-info">
+      </animated.div>
+      <animated.div style={styles} className="profile-info">
         <h1
           style={color}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          {isHover ? "Ahoj!" : "Hello!"}
+          {isHover ? "Ahoj!!" : "Hello!"}
         </h1>
-        <p>
-          Fuelled by a passion for designing things.<br></br> I have a deep
-          passion to MTB and FRONTEND<br></br>in my life. Learn more about my
-          journey below.
+        <p className="profile-text">
+          <Fadetext />
         </p>
-      </div>
+      </animated.div>
     </div>
   );
 }
