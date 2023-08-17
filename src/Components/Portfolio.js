@@ -1,4 +1,4 @@
-import PortfolioStyles from "./Portfolio.css";
+import "./Portfolio.css";
 
 export default function Portfolio() {
   return (
