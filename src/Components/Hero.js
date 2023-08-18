@@ -1,6 +1,7 @@
 import "./Hero.css";
 import { useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
+import { motion } from "framer-motion";
 import Fadetext from "./Fadetext";
 
 export default function Hero() {
