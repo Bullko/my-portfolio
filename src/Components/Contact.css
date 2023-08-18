@@ -1,0 +1,28 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+}
+
+.contact-img {
+  display: inline-flex;
+  flex-wrap: wrap;
+  height: 5rem;
+  margin: 1rem 2rem;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+a {
+  cursor: pointer;
+}
+a:hover {
+  background-color: #ffffff00;
+}

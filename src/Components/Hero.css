@@ -1,7 +1,6 @@
 .hero {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   max-width: 100rem;
   margin: 0 auto;
   justify-content: center;
@@ -11,9 +10,7 @@
 
 .profile-info {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  max-width: 20rem;
   text-align: left;
 }
 
@@ -34,4 +31,33 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1020px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    max-width: 100rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+  }
+
+  .profile-info {
+    text-align: center;
+    width: 100%;
+  }
+
+  .profile-text {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .fadetext {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: left;
+    text-align: left;
+  }
 }

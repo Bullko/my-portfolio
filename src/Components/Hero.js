@@ -8,7 +8,7 @@ export default function Hero() {
     loop: false,
     from: { opacity: "0", transform: "perspective(800px) rotateX(100deg)" },
     to: { opacity: "1", transform: "perspective(600px) rotateX(0deg)" },
-    config: { duration: "1000" },
+    config: { duration: "900" },
   });
 
   const [isHover, setIsHover] = useState(false);

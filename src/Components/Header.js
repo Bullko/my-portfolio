@@ -7,7 +7,10 @@ export default function Header() {
         <img src="./img/logo.svg" />
         <h1>AntonK</h1>
       </div>
-      <nav>
+      <a>
+        <img className="ham" src="./img/ham.svg" />
+      </a>
+      <nav className="navigation">
         <ul>
           <li>
             <a href="#">HOME</a>
