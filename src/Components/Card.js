@@ -29,7 +29,7 @@ export default function Card() {
         className="container"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        style={{ zIndex: index ? "1" : 2 }}
+        style={{ zIndex: index ? "1" : "2" }}
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: isScale ? "1.5" : "1" }}
         transition={{
