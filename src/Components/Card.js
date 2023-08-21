@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./Card.css";
 
 import { motion } from "framer-motion";
-import zIndex from "@mui/material/styles/zIndex";
 
 export default function Card() {
   //hoverZoom
@@ -14,14 +13,6 @@ export default function Card() {
   const handleMouseLeave = () => {
     setIsScale(false);
   };
-  //hoverIndex
-  const [index, setIndex] = useState(false);
-  const indexEnter = () => {
-    setIsScale(true);
-  };
-  const indexLeave = () => {
-    setIsScale(false);
-  };
 
   return (
     <div className="portfolio-card">
@@ -29,7 +20,7 @@ export default function Card() {
         className="container"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        style={{ zIndex: index ? "1" : "2" }}
+        style={{ zIndex: isScale ? "2" : "1" }}
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: isScale ? "1.5" : "1" }}
         transition={{

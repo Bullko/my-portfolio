@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import Portfolio from "./Components/Portfolio";
 import Contact from "./Components/Contact";
 import Card from "./Components/Card";
+import Showcase from "./Components/Showcase";
 
 function App() {
   return (
@@ -11,8 +12,7 @@ function App() {
       <Header />
       <Hero />
       <Portfolio />
-      <Card />
-      <Card />
+      <Showcase />
       <Contact />
     </div>
   );
