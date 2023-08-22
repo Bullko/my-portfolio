@@ -3,7 +3,7 @@ import "./Card.css";
 
 import { motion } from "framer-motion";
 
-export default function Card() {
+export default function Card(props) {
   //hoverZoom
   const [isScale, setIsScale] = useState();
 
@@ -20,7 +20,6 @@ export default function Card() {
         className="container"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        style={{ zIndex: isScale ? "2" : "1" }}
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: isScale ? "1.5" : "1" }}
         transition={{
@@ -29,7 +28,9 @@ export default function Card() {
           damping: 20,
         }}
       >
-        <h1>Ahoj</h1>
+        <img src={props.img} />
+        <h3>{props.name}</h3>
+        <p>{props.technology}</p>
       </motion.div>
     </div>
   );

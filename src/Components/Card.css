@@ -1,8 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
 .container {
   width: 20rem;
   height: 20rem;
-  background: rgb(131, 131, 131);
+  background: rgb(255, 255, 255);
   border-radius: 1rem;
   margin: 1rem;
   cursor: pointer;
+  padding: 0.5rem;
+  z-index: 0;
+  position: relative;
+}
+
+.container:hover {
+  z-index: 1;
+}
+
+.container > img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  border-radius: 5px;
+  object-fit: cover;
 }
