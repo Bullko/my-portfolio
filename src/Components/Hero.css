@@ -1,11 +1,10 @@
 .hero {
   display: flex;
-  flex-direction: row;
   max-width: 100rem;
+  height: 100vh;
   margin: 0 auto;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: 5rem;
+  align-items: center;
 }
 
 .profile-info {
@@ -17,10 +16,15 @@
 .profile-info > h1 {
   font-size: 7rem;
   margin: 1rem;
+  font-weight: 700;
 }
 .profile-text {
-  max-width: 10rem;
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  max-width: 100rem;
+  font-size: 3rem;
   margin: 1rem;
 }
 .profile-pic {

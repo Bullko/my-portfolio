@@ -48,10 +48,11 @@ a:hover {
     padding: 2rem;
     position: relative;
     top: 5rem;
+    /*display: none;*/
+    border: 2px solid red;
   }
   .ham {
-    display: block;
-    position: relative;
-    left: 20rem;
+    display: flex;
+    border: 2px solid red;
   }
 }

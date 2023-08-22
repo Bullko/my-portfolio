@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { useEffect, useRef } from "react";
 import "./Card.css";
 
-import { motion } from "framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 export default function Card(props) {
   //hoverZoom

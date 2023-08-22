@@ -26,15 +26,9 @@ export default function Hero() {
     fontWeight: isHover ? "400" : "",
   };
 
-  const transition = {
-    transition: "0.5ms",
-  };
-
   return (
     <div className="hero">
-      <animated.div style={styles} className="profile-pic">
-        <img />
-      </animated.div>
+      <animated.div style={styles} className="profile-pic"></animated.div>
       <animated.div style={styles} className="profile-info">
         <h1
           style={color}
@@ -46,6 +40,7 @@ export default function Hero() {
         <p className="profile-text">
           <Fadetext />
         </p>
+        <img />
       </animated.div>
     </div>
   );
