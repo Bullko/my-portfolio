@@ -25,8 +25,8 @@ export default function Portfolio() {
         <a href="https://github.com/Bullko" target="blank">
           <img className="contact-img" src="./img/github.png" />
         </a>
-        <a>
-          <img className="contact-img" src="./img/linkedin.png" />
+        <a href="https://codepen.io/BullsHI7" target="blank">
+          <img className="contact-img" src="./img/codepen.png" />
         </a>
         <a>
           <img className="contact-img" src="./img/email.png" />

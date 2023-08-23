@@ -22,7 +22,7 @@ export default function Card(props) {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         initial={{ scale: 0 }}
-        animate={{ rotate: 360, scale: isScale ? "1.5" : "1" }}
+        animate={{ rotate: 360, scale: isScale ? "2" : "1" }}
         transition={{
           type: "spring",
           stiffness: 260,
@@ -31,7 +31,10 @@ export default function Card(props) {
       >
         <img src={props.img} />
         <h3>{props.name}</h3>
-        <p>{props.technology}</p>
+        <p>
+          <strong>{props.technology}</strong>
+        </p>
+        <p>{props.info}</p>
       </motion.div>
     </div>
   );
