@@ -4,9 +4,8 @@
   flex-wrap: wrap;
   max-width: 100rem;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding-top: 7rem;
 }
 
 .icons > img {
@@ -14,5 +13,10 @@
   margin: 1rem 2rem;
 }
 h1 {
+  font-size: 3rem;
   font-weight: 400;
+}
+.dot {
+  color: #374f80;
+  font-size: 5rem;
 }

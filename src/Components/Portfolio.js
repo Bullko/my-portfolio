@@ -1,9 +1,12 @@
 import "./Portfolio.css";
+import Showcase from "./Showcase";
 
 export default function Portfolio() {
   return (
-    <div className="portfolio">
-      <h1>/Portfolio</h1>
+    <div id="p1" className="portfolio">
+      <h1>
+        /Portfolio<span className="dot">.</span>
+      </h1>
 
       <div className="icons">
         <img src="./img/html.png" />
@@ -11,6 +14,7 @@ export default function Portfolio() {
         <img src="./img/js.png" />
         <img src="./img/react.png" />
       </div>
+      <Showcase />
     </div>
   );
 }

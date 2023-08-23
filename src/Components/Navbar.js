@@ -28,7 +28,7 @@ export default function Navbar() {
             <a href="/home">Home</a>
           </li>
           <li>
-            <a href="/Portfolio">Portfolio</a>
+            <a href="#p1">Portfolio</a>
           </li>
           <li>
             <a href="/contact">Contact</a>

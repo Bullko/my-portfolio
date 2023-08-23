@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   max-width: 100rem;
-  height: 100vh;
+  height: 70vh;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -11,12 +11,17 @@
   display: flex;
   flex-direction: column;
   text-align: left;
+  position: relative;
+  z-index: 1;
 }
 
 .profile-info > h1 {
   font-size: 7rem;
   margin: 1rem;
   font-weight: 700;
+  border-bottom: #374f80 solid 1rem;
+  position: relative;
+  z-index: 2;
 }
 .profile-text {
   display: flex;
@@ -26,6 +31,8 @@
   max-width: 100rem;
   font-size: 3rem;
   margin: 1rem;
+  position: relative;
+  z-index: 2;
 }
 .profile-pic {
   width: 30rem;
@@ -35,6 +42,19 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+.dot {
+  color: #374f80;
+}
+
+.bg {
+  height: 30rem;
+  width: 30rem;
+  background-image: url(/public/img/bg2.svg);
+  position: absolute;
+  z-index: 0;
 }
 
 @media only screen and (max-width: 1020px) {
@@ -50,6 +70,11 @@
   .profile-info {
     text-align: center;
     width: 100%;
+  }
+
+  .profile-info > h1 {
+    font-size: 5rem;
+    font-weight: 700;
   }
 
   .profile-text {

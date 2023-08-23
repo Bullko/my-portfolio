@@ -3,7 +3,23 @@ import "./Contact.css";
 export default function Portfolio() {
   return (
     <div className="contact">
-      <h1>/Contact</h1>
+      <h1>
+        /Contact<span className="dot">.</span>
+      </h1>
+      <p>
+        Shoot me an email if you want to connect! You can also find me on &nbsp;
+        <a
+          href="https://www.linkedin.com/in/anton-kraj%C5%88%C3%A1k-9225a694/"
+          target="blank"
+        >
+          Linkedin
+        </a>{" "}
+        or{" "}
+        <a href="https://twitter.com/BullkoSVK" target="blank">
+          Twitter
+        </a>{" "}
+        if that's more your speed.
+      </p>
 
       <div className="icons">
         <a href="https://github.com/Bullko" target="blank">

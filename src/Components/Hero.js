@@ -22,26 +22,37 @@ export default function Hero() {
   };
 
   const color = {
-    color: isHover ? "#374f80" : "#1a1c20",
     fontWeight: isHover ? "400" : "",
   };
 
   return (
     <div className="hero">
-      <animated.div style={styles} className="profile-pic"></animated.div>
+      <motion.div
+        className="profile-pic"
+        initial={{ scale: 0 }}
+        animate={{ rotate: 360, scale: "1" }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
+        }}
+      >
+        <img />
+      </motion.div>
       <animated.div style={styles} className="profile-info">
         <h1
           style={color}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          {isHover ? "Ahoj!!" : "Hello!"}
+          {isHover ? "Ahoj, volám sa Anton" : "Hey, I'm Anton"}
+          <span className="dot">.</span>
         </h1>
         <p className="profile-text">
           <Fadetext />
         </p>
-        <img />
       </animated.div>
+      <div className="bg"></div>
     </div>
   );
 }

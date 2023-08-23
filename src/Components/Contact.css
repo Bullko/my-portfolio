@@ -26,3 +26,8 @@ a {
 a:hover {
   background-color: #ffffff00;
 }
+
+.contact > p {
+  font-size: 2rem;
+  text-align: center;
+}

@@ -11,7 +11,6 @@ function App() {
       <Navbar />
       <Hero />
       <Portfolio />
-      <Showcase />
       <Contact />
     </div>
   );
