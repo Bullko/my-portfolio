@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 60px;
+  max-height: 6rem;
   width: 100%;
   padding: 0.5rem 0rem;
   color: #1a1c20;

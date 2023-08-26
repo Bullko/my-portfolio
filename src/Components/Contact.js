@@ -2,7 +2,7 @@ import "./Contact.css";
 
 export default function Portfolio() {
   return (
-    <div className="contact">
+    <div id="p2" className="contact">
       <h1>
         /Contact<span className="dot">.</span>
       </h1>

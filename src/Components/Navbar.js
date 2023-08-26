@@ -25,13 +25,34 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <a href="/home">Home</a>
+            <a
+              href="/home"
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="#p1">Portfolio</a>
+            <a
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+              href="#p1"
+            >
+              Portfolio
+            </a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+              }}
+              href="#p2"
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>
